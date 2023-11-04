@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+  background-image: url(/images/room.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; 
+}
+
+#game
+{
+	display: inline-block;
+	position:absolute;
+  top: 47vh;
+  right: 38vw;
+}
+
+#game .cup
+{
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 130px solid red;
+	height: 0;
+	cursor: pointer;
+	float: left;
+	margin: 0 20px;
+	position: relative;
+	width: 70px;
+}
+
+#game .ball
+{
+	/* display: none; */
+	background:gold;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	margin-left: 60px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#game-result
+{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+#btn-play
+{
+	background: #CCC;
+	border: 0;
+	border-radius: 40px;
+	cursor: pointer;
+	display: block;
+  position: absolute;
+  top:80%;
+  right: 5%;
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+  font-family: 'Pixelify Sans';
+  color: red;
+  background-color: yellow;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+
+}
+
+#btn-play:hover{
+  color:black;
+  background-color:chocolate;
+  transform: scale(0.9);
+}
+
+#table{
+  /* z-index: -100000; */
+  position: absolute;
+  top:40%;
+  left: 10%;
+}
+.details{
+  position: absolute;
+  display: flex;
+  width: 70%;
+  height: 15%;
+  border-radius: 5px;
+  background:rgba(23, 3, 3, 0.466);
+  justify-content: space-around;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  border: 2px solid #000;
+  right: 15% ;
+  align-items: center;
+
+}
+.details p{
+  font-size: 30px;
+  height: 17px;
+  color: white;
+}
+
+

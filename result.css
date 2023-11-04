@@ -1,0 +1,116 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/gameover.png);
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    background-color:rgb(201,108,56);
+}
+
+.banner {
+    position: absolute;
+    top:17%;
+    right:5%;
+    width: 50%;
+    height: 55vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(208, 221, 221, 0.207);
+    border-radius: 20px;
+    
+}
+
+
+.scores {
+    color:whitesmoke;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Pixelify Sans';
+    animation: animateText 6s ease-in-out infinite;
+   
+    
+}
+
+.scores span {
+    font-size: 4em;
+    line-height: 70px;
+    text-shadow: 3px 10px 10px #0b0600;
+    
+} 
+
+@keyframes animateText {
+    0%,50%
+    {
+        transform: translateY(-20px);
+    }
+    30%
+    {
+        transform: translateY(20px);
+    }
+}
+
+ #play-again ,#home_return{
+    position: relative;
+    background-color: #d5e407;
+    color: #e07400;
+    top: 150px;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    cursor: pointer; 
+}
+
+#play-again:hover  ,#home_return:hover{
+    color:#0b0600;
+    background-color: #e07400;
+    transform: scale(1.2);
+
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    width: 15vw;
+}
+    
+
+#play-again p {
+    position: relative;
+    top: 15px;
+    left: 7px;
+    font-size: 1.1em;
+
+
+}
+
+@media screen and (max-width: 530px){
+    .scores span {
+        font-size: 2em;
+        line-height: 20px;
+    }
+    #play-again p {
+        font-size: 1em;
+        top: 13px;
+        left: 10px;
+    }
+}
+
+
