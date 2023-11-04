@@ -10,7 +10,7 @@
 }
 
 body{
-    background-image: url(images/gameover.png);
+    background-image: url('images/gameover.png');
     background-repeat: no-repeat;
     height: auto;
     width: auto;
