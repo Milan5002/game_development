@@ -1,16 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Pixelify+Sans&display=swap');
+
 body{
-  background-image: url('images/home.jpeg');
+  background-image: url('images/home.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
-#img{
-  height: 70vh;
-  width: 50vw;
-  position: absolute;
-  right: 20%;
-  bottom: 50%;
-}
+
 
 .sec {
   position: relative;
@@ -25,16 +22,17 @@ body{
 
 .sec h1 {
   font-size: 4em;
-  color:black;
+  color:gold;
   font-family: 'Fruktur', cursive;
   font-weight: 100;
   text-align: center;
   text-shadow: 0 0 40px #6e0ef5;
+  z-index: 10;
 }
 .content {
   position: relative;
   width: 700px;
-  height: 500px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +57,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: start;
+    font-family: 'kenia';
 }
 
 .content h3 {
@@ -96,7 +95,43 @@ body{
   color: #000;
   box-shadow: 0 0 10px #ffae00;
   background-color: rgba(255, 0, 0, 0.474);
+  transform: scale(1.4);
   
 }
 
 
+@media (max-width: 500px) {
+  body {
+    background-size: cover; 
+  }
+
+  .sec {
+    padding: 20px;
+  }
+
+  .sec h1 {
+    font-size: 2em; 
+  }
+
+  .content {
+    width: 100%; 
+    height: 100%; 
+    margin: 20px 0;
+  }
+
+  .inst {
+    padding: 10px; 
+  }
+
+  .content h3 {
+    font-size: 1.5em; 
+  }
+
+  .content li {
+    font-size: 1em; 
+  }
+
+  #login p {
+    font-size: 1.2em;
+  }
+}

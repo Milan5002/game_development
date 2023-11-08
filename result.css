@@ -10,7 +10,7 @@
 }
 
 body{
-    background-image: url('images/gameover.png');
+    background-image: url('./images/gameover.png');
     background-repeat: no-repeat;
     height: auto;
     width: auto;
@@ -27,11 +27,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-wrap: wrap; */
     background-color: rgba(208, 221, 221, 0.207);
-    border-radius: 20px;
-    
 }
 
+#score{
+    font-family: 'Times New Roman', Times, serif;
+}
 
 .scores {
     color:whitesmoke;
@@ -68,7 +70,7 @@ body{
     position: relative;
     background-color: #d5e407;
     color: #e07400;
-    top: 150px;
+    top: 60px;
     width: 100px;
     height: 50px;
     border-radius: 50px;
@@ -97,11 +99,14 @@ body{
     top: 15px;
     left: 7px;
     font-size: 1.1em;
-
-
 }
 
-@media screen and (max-width: 530px){
+
+@media screen and (max-width: 470px){
+
+    body{
+        background-size: cover;
+    }
     .scores span {
         font-size: 2em;
         line-height: 20px;
@@ -111,6 +116,28 @@ body{
         top: 13px;
         left: 10px;
     }
+    .banner {
+        position: absolute;
+        top:60%;
+        right:20%;
+        width: 60%;
+        height: 30vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 }
 
+#play-again ,#home_return{
+    position: relative;
+    top: 20px;
+    width: 90px;
+    height: 40px;
+   
+}
+.button{
+    width: 40vw;
+}
+}
 
