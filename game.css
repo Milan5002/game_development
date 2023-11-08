@@ -107,69 +107,68 @@ body
   color: white;
 }
 
-/* @media (max-width: 500px) {
-  body {
-    background-size: 50%;
-    transform: rotate(-90deg);
-    width: 100%;
-    height: 100%;
+ @media (max-width: 650px) {
+
+  body{
+    background-size: cover;
     overflow: hidden;
-  
-    overflow-x: hidden;
-    overflow-y: hidden;
   }
-
-
-  #game {
-    position:absolute;
-    top: 22vh;
-    right: 18vw;
-  }
-
-  #game .cup
-  {
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 90px solid red;
-    height: 0;
-    cursor: pointer;
-    float: left;
-    margin: 0 20px;
-    position: relative;
-    width: 40px;
-  }
-
   #game .ball {
     height: 15px;
     width: 15px;
     margin-left: 30px;
   }
-
   #table{
-    /* position: absolute;
+     position: absolute;
     top:20%;
-    left: 5%; */
-    /* height: 50px;
-    width: 100px;
+    left: 2%; 
+     height: 200px;
+    width: 350px;
   }
-
+  #game {
+    position:absolute;
+    top: 22vh;
+    right: 35vw;
+  }
+  
+  #game .cup
+  {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 50px solid red;
+    height: 0;
+    cursor: pointer;
+    float: left;
+    margin: 0 20px;
+    position: relative;
+    width: 30px;
+  }
   #btn-play{
     position: absolute;
-  top:0%;
-  right: 0%;
+  top:50%;
+  right: 50%;
   width: 70px;
   height: 25px;
   font-size: 13px;
   }
   .details {
     position: absolute;
-    width: 70%;
-    height: 20%;
+    width: 60%;
+    height: 10%;
     align-items: center;
+    right: 35%;
   }
 
   .details p {
     font-size: 15px;
     height: 9px;
   } 
-}  */
+}
+
+
+
+
+
+ 
+
+ 
